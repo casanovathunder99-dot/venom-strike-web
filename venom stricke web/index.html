@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Venom Strike Web — Blagues • Motivation • Tech • Animation</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Venom Strike Web — blagues, motivation, animations et tech en style néon." />
+</head>
+<body class="bg">
+  <header class="topbar">
+    <div class="container row">
+      <a class="brand" href="index.html">
+        <div class="logo">
+          <!-- simple svg inline helmet -->
+          <svg viewBox="0 0 48 48" width="36" height="36" aria-hidden>
+            <path d="M6,22 a4,4 0 0,0 0,8 v4 a2,2 0 0,0 2,2 h6 a2,2 0 0,0 2,-2 v-4 a4,4 0 0,0 0,-8 z"
+              fill="#ff00a8"/>
+            <path d="M42,22 a4,4 0 0,1 0,8 v4 a2,2 0 0,1 -2,2 h-6 a2,2 0 0,1 -2,-2 v-4 a4,4 0 0,1 0,-8 z"
+              fill="#ff00a8"/>
+            <path d="M6,20 A16,12 0 0,1 42,20" stroke="#00ffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <span class="title">Venom Strike</span>
+          <span class="subtitle">Blagues • Motivation • Tech • Animations</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <button id="menuToggle" class="menu-btn">☰</button>
+        <ul id="navList" class="nav-list">
+          <li><a href="#latest">Derniers</a></li>
+          <li><a href="#categories">Catégories</a></li>
+          <li><a href="post.html?sample">Exemple</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="search-container">
+        <input id="searchInput" placeholder="Rechercher..." aria-label="Rechercher" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <h1 class="neon-title">Venom Strike Web</h1>
+        <p class="lead">Blagues qui claquent • Boost de motivation • Tutoriaux tech • Animations fun</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#latest">Voir les derniers</a>
+          <a class="btn ghost" href="#categories">Parcourir par thème</a>
+        </div>
+      </div>
+      <div class="animated-bg" aria-hidden></div>
+    </section>
+
+    <section id="categories" class="container section categories">
+      <h2>Catégories</h2>
+      <div class="grid">
+        <article class="card neon-card" data-cat="fun">
+          <h3>Blagues</h3>
+          <p>Humour, memes et petites histoires pour sourire.</p>
+        </article>
+        <article class="card neon-card" data-cat="motivation">
+          <h3>Motivation</h3>
+          <p>Boost, routines, citations et défis quotidiens.</p>
+        </article>
+        <article class="card neon-card" data-cat="animation">
+          <h3>Animation</h3>
+          <p>Tutoriels, demos et petites boucles animées.</p>
+        </article>
+        <article class="card neon-card" data-cat="tech">
+          <h3>Tech</h3>
+          <p>Tutos, reviews, projets et astuces dev.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="latest" class="container section latest">
+      <h2>Derniers articles</h2>
+      <div id="postsGrid" class="posts grid">
+        <!-- posts injected by script.js -->
+      </div>
+    </section>
+
+    <section id="about" class="container section about">
+      <h2>À propos</h2>
+      <p>Venom Strike Web réunit la bonne dose d’humour, d’énergie et de technique — pensé pour les devs curieux et les esprits créatifs.</p>
+    </section>
+
+    <section id="contact" class="container section contact">
+      <h2>Contact</h2>
+      <form id="contactForm" class="contact-form" onsubmit="return false;">
+        <input type="email" id="email" placeholder="Ton email" required />
+        <textarea id="message" placeholder="Ton message..." rows="4" required></textarea>
+        <button class="btn primary" type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container row">
+      <div>© <strong>Venom Strike Web</strong> — construit avec 💜 & neon</div>
+      <div class="socials">
+        <a href="#" aria-label="Twitter">T</a>
+        <a href="#" aria-label="YouTube">Y</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

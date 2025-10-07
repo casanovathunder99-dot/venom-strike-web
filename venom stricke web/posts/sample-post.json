@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Blague du jour",
+    "excerpt": "Un dev dit à sa cafetière : 'Stop à 404'. La cafetière répond 'Error 500'.",
+    "cat": "fun",
+    "date": "2025-10-07"
+  },
+  {
+    "id": 2,
+    "title": "5 routines pour être productif",
+    "excerpt": "Commence par une micro-tâche, hydrate-toi, fais 2 pompes...",
+    "cat": "motivation",
+    "date": "2025-10-06"
+  },
+  {
+    "id": 3,
+    "title": "Mini animation CSS : Loader néon",
+    "excerpt": "Apprends à créer un loader néon avec CSS keyframes en 3 étapes.",
+    "cat": "animation",
+    "date": "2025-10-05"
+  },
+  {
+    "id": 4,
+    "title": "Astuce Vite pour devs",
+    "excerpt": "Optimise le reload et configure alias pour gagner du temps.",
+    "cat": "tech",
+    "date": "2025-10-04"
+  }
+]
