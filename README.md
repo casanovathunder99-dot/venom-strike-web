@@ -9,7 +9,7 @@ Ce projet vise à inspirer et divertir à travers des contenus variés et un des
 - JavaScript  
 
 ## 🌐 Aperçu
-🖥️ [Visitez le site en ligne](https://casanova.github.io/venom-strike-web/)
+🖥️ [Visitez le site en ligne]( https://casanovathunder99-dot.github.io/venom-strike-web/)
 
 ---
 
