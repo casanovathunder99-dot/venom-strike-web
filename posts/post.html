@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Article • Venom Strike Web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg">
+  <header class="topbar">
+    <div class="container row">
+      <a class="brand" href="index.html">
+        <div class="logo">
+          <!-- svg court -->
+          <svg viewBox="0 0 48 48" width="28" height="28" aria-hidden>
+            <path d="M6,22 a4,4 0 0,0 0,8 v4 a2,2 0 0,0 2,2 h6 a2,2 0 0,0 2,-2 v-4 a4,4 0 0,0 0,-8 z" fill="#ff00a8"/>
+            <path d="M42,22 a4,4 0 0,1 0,8 v4 a2,2 0 0,1 -2,2 h-6 a2,2 0 0,1 -2,-2 v-4 a4,4 0 0,1 0,-8 z" fill="#ff00a8"/>
+            <path d="M6,20 A16,12 0 0,1 42,20" stroke="#00ffff" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <span class="title">Venom Strike</span>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="container section article">
+    <article id="articleContent">
+      <h1 id="title">Titre de l'article</h1>
+      <p class="meta">Par <strong>Venom</strong> — <time id="date">aujourd'hui</time></p>
+      <div id="cover" class="cover neon-card">
+        <!-- cover or embedded media -->
+        <p style="opacity:.8">Image / Vidéo</p>
+      </div>
+
+      <div id="content" class="content">
+        <p>Contenu de démonstration. Remplace ce texte par le vrai article.</p>
+        <pre><code>// Exemple de code
+console.log('Venom Strike');</code></pre>
+        <h3>Section</h3>
+        <p>Paragraphe supplémentaire...</p>
+      </div>
+    </article>
+
+    <aside class="sidebar">
+      <div class="neon-card">Articles récents</div>
+      <div class="neon-card">Catégories</div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container row">
+      <div>© Venom Strike Web</div>
+    </div>
+  </footer>
+
+  <script>
+    // Demo: si on ouvre post.html?sample on charge sample content
+    const params = new URLSearchParams(location.search);
+    if (params.has('sample')) {
+      document.getElementById('title').textContent = "Blague du jour : le dev et la cafetière";
+      document.getElementById('date').textContent = new Date().toLocaleDateString();
+      document.getElementById('content').innerHTML = `
+        <p>Un dev dit à sa cafetière : "Stop à 404". La cafetière lui répond : "Error 500: trop chaud."</p>
+        <p>— Fin de la blague. 😄</p>
+      `;
+    }
+  </script>
+</body>
+</html>
